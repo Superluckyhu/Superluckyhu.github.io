@@ -1,22 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '',
-      repo: ''
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Superluckyhu</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="static/icon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="static/icon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="static/icon//site.webmanifest" />
+
+    <style>
+      .github-corner {
+        img {
+          border-radius: 30% 0% 0% 30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">很快，等我一下！</div>
+    <script>
+      window.$docsify = {
+        name: "Superluckyhu",
+        maxLevel: 5, //最大支持渲染的标题层级
+        auto2top: true,
+        loadSidebar: true,
+        subMaxLevel: 3,
+        loadNavbar: true,
+        coverpage: true,
+        onlyCover: true,
+        topMargin: 25,
+        mergeNavbar: true,
+        
+        // 字数统计
+        count: {
+          countable: true,
+          fontsize: "0.9em",
+          color: "rgb(90,90,90)",
+          language: "chinese",
+        },
+        search: {
+          maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+          paths: "auto",
+          placeholder: "搜索",
+          noData: "找不到结果",
+          // 搜索标题的最大程级, 1 - 6
+          depth: 6,
+        },
+
+        // 返回顶部
+        docsifyBackTop: {
+          size: 32, // 数值，组件大小，默认值32。
+          bottom: 15, // 数值，组件底部偏移距离，默认值15。
+          right: 15, // 数值，组件右侧偏移距离，默认值15。
+          logo: '<svg t="1725706590107" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5123" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><path d="M512.482597 435.931429c-5.851429 0-96.548571-2.925714-105.325715-108.251429 2.925714-99.474286 99.474286-108.251429 105.325715-108.251429 5.851429 0 102.4 8.777143 105.325714 108.251429-8.777143 105.325714-99.474286 108.251429-105.325714 108.251429m254.537142 2.925714C772.871168 146.285714 530.036882 11.702857 512.482597 2.925714 494.928311 11.702857 252.094025 146.285714 255.019739 438.857143 205.282597 471.04 152.619739 526.628571 161.396882 626.102857c8.777143 99.474286 105.325714 163.84 140.434286 160.914286 38.034286-2.925714 26.331429-32.182857 26.331429-32.182857l11.702857-49.737143s52.662857 81.92 70.217143 81.92h198.948571c17.554286 0 70.217143-81.92 70.217143-81.92l11.702857 49.737143s-11.702857 26.331429 26.331429 32.182857c38.034286 2.925714 131.657143-61.44 140.434285-160.914286 11.702857-96.548571-40.96-155.062857-90.697143-187.245714" fill="#4CAFE3" p-id="5124"></path><path d="M459.819739 945.005714c0 11.702857-8.777143 20.48-20.48 20.48s-20.48-8.777143-20.48-20.48v-108.251428c0-11.702857 8.777143-20.48 20.48-20.48s20.48 8.777143 20.48 20.48v108.251428zM538.814025 1000.594286c0 11.702857-8.777143 23.405714-23.405714 23.405714-11.702857 0-23.405714-8.777143-23.405714-23.405714v-160.914286c0-11.702857 8.777143-23.405714 23.405714-23.405714 11.702857 0 23.405714 8.777143 23.405714 23.405714v160.914286zM611.956882 918.674286c0 11.702857-8.777143 20.48-20.48 20.48s-20.48-8.777143-20.48-20.48v-76.068572c0-11.702857 8.777143-20.48 20.48-20.48 11.702857 0 20.48 8.777143 20.48 20.48v76.068572z" fill="#4CAFE3" p-id="5125"></path></svg>', // logo:字符串或svg矢量图代码，默认为svg代码图标。
+          //bgColor: "#42b983", // 背景颜色，#fff、pink等，logo为svg图标时，不填。
+        },
+
+        //最近更新时间
+        timeUpdater: {
+          text: "<div align='right' width='200px' style='color:gray;font-size:10px'>-------------- 最后更新时间:&emsp;{docsify-updated} --------------</div>",
+          formatUpdated: "{YYYY}/{MM}/{DD}",
+          whereToPlace: "bottom", // "top" or "bottom", default to "bottom"
+        },
+        toc: {
+          tocMaxLevel: 5,
+          target: "h1, h2, h3, h4, h5",
+          ignoreHeaders: [
+            "<!-- {docsify-ignore} -->",
+            "<!-- {docsify-ignore-all} -->",
+          ],
+        },
+        // 备案
+        beian: {
+          ICP: "蜀ICP备2022013745号",
+          NISMSP: {
+            number: "",
+            url: "",
+            id: "",
+          },
+        },
+
+        contributors: {
+          repo: "Superluckyhu/Superluckyhu.github.io",
+          ignores: [],
+          style: {
+            color: "#ffffff",
+            bgColor: "#404040",
+          },
+          image: {
+            size: 30,
+            isRound: true,
+            margin: "0.5em",
+          },
+          load: {
+            isOpen: true,
+            color: "#009999",
+          },
+        },
+        pagination: {
+          previousText: "上一章节",
+          // or
+          nextText: {
+            "/en/": "NEXT",
+            "/": "下一章节",
+          },
+          crossChapter: true,
+          crossChapterText: true,
+        },
+        repo: "true",
+        corner: {
+          url: "https://github.com/Superluckyhu/Superluckyhu.github.io",
+          // you can set the image link here
+          icon: "https://docs-pics.oss-cn-chengdu.aliyuncs.com/images/202409071952861.gif",
+          // the size of the image
+          width: 50,
+          height: 50,
+        },
+      };
+    </script>
+
+    <!-- 离线模式 -->
+    <script>
+      if (typeof navigator.serviceWorker !== "undefined") {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+    <!--Java代码高亮-->
+    <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+    <!-- 复制到剪贴板 -->
+    <script src="//unpkg.com/docsify-copy-code"></script>
+    <!-- 图片缩放 -->
+    <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+    <!-- 表情 -->
+    <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+    <!-- 字数统计 -->
+    <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+    <!-- 搜索 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+    <!-- 最近更新时间 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://gcore.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/light.css"
+    />
+    <script src="https://gcore.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script>
+
+    <!-- 备案 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-beian@latest/dist/beian.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/LIGMATV/docsify-dark-switcher@latest/docsify-dark-switcher.js"></script>
+
+    <!-- docsify-contributors -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-contributors@latest/dist/index.min.js"></script>
+
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <!-- <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script> -->
+
+    <script src="//cdn.jsdelivr.net/npm/docsify-corner/dist/docsify-corner.js"></script>
+
+    <!-- <script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script>
+      document.body.oncopy = function () {
+        swal(
+          "复制成功 ",
+          "若要转载或引用请务必保留原文链接，并申明来源。",
+          "success"
+        );
+      };
+    </script> -->
+  </body>
 </html>
