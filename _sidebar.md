@@ -1,6 +1,6 @@
 - [首页](/README.md)
 - 笔记
-  - [建设中]()
+  - [JUC](./docs/java_high_level/juc_notes.md)
 - 随记
   - [摘抄](./docs/excerpt.md)
 * 面试题

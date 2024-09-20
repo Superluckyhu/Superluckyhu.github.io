@@ -378,7 +378,7 @@ public static Integer valueOf(int i) {
         }
 ```
 
-# BIgdecimal坑
+# BIgDecimal坑
 
 **阿里开发手册：**
 
